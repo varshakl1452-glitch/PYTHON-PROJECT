@@ -1,0 +1,29 @@
+def collatz(n):
+
+while n != 1:
+
+print(n, end=" -> ")
+
+
+if n % 2 == 0:
+
+n = n // 2 # even number
+
+else:
+
+n = 3 * n + 1 # odd number
+
+
+print(1)
+
+# Take input from user
+
+num = int(input("Enter a positive integer: "))
+
+if num > 0:
+
+collatz(num)
+
+else:
+
+print("Please enter a positive number.")
