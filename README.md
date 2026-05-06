@@ -110,3 +110,41 @@ text = '\\n'.join(lines)
 
 pyperclip.copy(text)
 
+
+
+Password manager:
+
+
+
+import pyperclip
+
+password={
+
+&#x20;   'snap':'abc@123',
+
+&#x20;   'gmail':'efg@123',
+
+&#x20;   'insta':'ghi@123',
+
+&#x20;   }
+
+account=input("enter the account name")
+
+
+
+if account in password:
+
+&#x20;   pyperclip.copy(password\[account])
+
+&#x20;   print("password copied to clipboard")
+
+&#x20;   
+
+else:
+
+&#x20;   print('password not found')
+
+
+
+
+
